@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Suncode Exercise</title>
+  </head>
+  <body>
+
+    <select class="select" name="main-list" select-list>
+      <option selected disabled>--- select a list ---</option>
+      <option value="kolumna1">kolumna1</option>
+      <option value="kolumna2">kolumna2</option>
+      <option value="kolumna3">kolumna3</option>
+      <option value="kolumna4">kolumna4</option>
+    </select>
+    <button type="button" btn_repetitive>Send request to find rows with repetitive values!</button>
+    <button type="button" btn_notrepetitive>Send request to find rows with not repetitive values!</button>
+    <div class="template" row-template data-id="0">
+      <form class="datatable_row" datatable_row  style="display:flex;flex-direction: row;">
+        <fieldset class="datatable-fieldset" datatable-fieldset>
+          <p class="datatable_field-value" data-id-paragraph>ID</p>
+        </fieldset>
+        <fieldset class="datatable-fieldset" datatable-fieldset>
+          <p class="datatable_field-value" data-column1-paragraph>kolumna1</p>
+        </fieldset>
+        <fieldset class="datatable-fieldset" datatable-fieldset>
+          <p class="datatable_field-value" data-column2-paragraph>kolumna2</p>
+        </fieldset>
+        <fieldset class="datatable-fieldset" datatable-fieldset>
+          <p class="datatable_field-value" data-column3-paragraph>kolumna3</p>
+        </fieldset>
+        <fieldset class="datatable-fieldset" datatable-fieldset>
+          <p class="datatable_field-value" data-column4-paragraph>kolumna4</p>
+        </fieldset>
+      </form>
+    </div>
+    <div container></div>
+    <script src="jquery.js"></script>
+    <script src ="script.js"></script>
+  </body>
+</html>
